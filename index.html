@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<style>
+
+ 
+#screen1{
+  width: 100%;
+  padding: 60px 0;
+  text-align: center;
+
+  margin-top: 30px;
+  background-color: rgb(255, 0, 98);
+  
+}
+
+#screen2{
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(198, 18, 243);
+  margin-top: 20px;
+  animation-name: ani;
+  animation-duration: 4s;
+}
+
+</style>
+</head>
+<body style="background-color: rgb(235, 241, 245);">
+
+    
+<button onclick="myFunction()">screen1</button>
+<button onclick='functionn()'>screen 2</button>
+
+
+<div class="container" id="screen1">
+  <p>Can you guess the number? 
+    Try Below</p>
+
+  <label for="Random">Enter a random number! Guess: </label>
+  <input type="number" id="Random" min="1" max="20">
+  <button onclick="checkRandom()">Submit </button>
+
+  <p id="message"></p>
+
+
+</div>
+
+<div id="screen2" class="hidden">
+        <p style="font-size: x-large;">hope you enjoyed the game</p>
+    </div>
+
+ 
+   
+
+</body>
+</html>
