@@ -1,53 +1,44 @@
+
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+position: relative;
 }
 
-header {
+.screen {
     text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
+    padding: 20px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+
+.hidden {
+    display: none;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+
+button {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #afad4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-    
-
-   button{
-    background-color: aqua;
-   }
-
-    input {
-        padding: 20px;
+/* Responsive Design */
+@media (max-width: 600px) {
+    .screen {
         font-size: 16px;
     }
-    
-    .hidden {
-        display: none;
-    }
-    
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
 }
-@keyframes ani {
-    from {background-color: rgb(10, 1, 1);}
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
     to {background-color: yellow;}
   }
